@@ -11,6 +11,6 @@ if api_key:
  try:
   genai.configure(api_key=api_key)
   model = genai.GenerativeModel('gemini-1.5-flash')
-   else:
+ else:
   st.warning("⚠️ يرجى إدخال مفتاح الـ API في القائمة الجانبية.")
 
