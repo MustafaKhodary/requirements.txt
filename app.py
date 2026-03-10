@@ -15,7 +15,7 @@ if st.button("تأليف القصة الآن ✨"):
   else:
     try:
       genai.configure(api_key=api_key)
-      model = genai.GenerativeModel('gemini-1.5-flash')
+      model = genai.GenerativeModel('models/gemini-1.5-flash')
       with st.spinner("جاري تأليف قصة جميلة..."):
         response = model.generate_content(f"اكتب قصة تربوية للأطفال عن: {user_input}")
         st.success("تمت القصة!")
