@@ -8,7 +8,7 @@ api_key = st.text_input("أدخل مفتاح Gemini API", type="password")
 st.info("بعد لصق المفتاح، اضغط Enter")
 user_input = st.text_area("عن ماذا تريد قصة اليوم؟", placeholder="مثلاً: مغامرة في أعماق البحار...")
 if st.button("تأليف القصة الآن ✨"):
-if not api_key:
+  if not api_key:
 st.error("⚠️ من فضلك ضع مفتاح الـ API في القائمة الجانبية أولاً!")
 elif not user_input:
 st.warning("⚠️ اكتب فكرة للقصة أولاً")
