@@ -3,7 +3,7 @@ import google.generativeai as genai
 st.set_page_config(page_title="حكايات الصغار الذكية", page_icon="🌙")
 st.markdown("<h1 style='text-align: center;'>🌙 مؤلف قصص الأطفال</h1>", unsafe_allow_html=True)
 with st.sidebar:
-st.header("⚙️ الإعدادات")
+  st.header("⚙️ الإعدادات")
 api_key = st.text_input("أدخل مفتاح Gemini API", type="password")
 st.info("بعد لصق المفتاح، اضغط Enter")
 user_input = st.text_area("عن ماذا تريد قصة اليوم؟", placeholder="مثلاً: مغامرة في أعماق البحار...")
